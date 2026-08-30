@@ -1,0 +1,11 @@
+villes,pente_c_par_an,lat,lon,region
+Lomé,0.025,6.13,1.22,Maritime
+Tabligbo,0.061,6.58,1.5,Maritime
+Kouma konda,0.004,6.95,0.6,Plateaux
+Atakpamé,0.086,7.53,1.13,Plateaux
+Sotouboua,-0.014,8.56,0.98,Centrale
+Sokodé,0.021,8.98,1.13,Centrale
+Kara,-0.036,9.55,1.19,Kara
+Niamtougou,0.132,9.77,1.1,Kara
+Mango,0.096,10.36,0.47,Savanes
+Dapaong,0.071,10.86,0.21,Savanes
