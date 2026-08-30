@@ -1,0 +1,9 @@
+# artefacts
+__pycache__/
+*.pyc
+
+# fichiers lourds / inutiles au déploiement
+*.pdf
+data/donnees_brutes/
+data/togo_regions_geoBoundaries.geojson
+rapport/img/
