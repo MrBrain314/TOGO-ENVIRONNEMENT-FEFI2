@@ -193,7 +193,13 @@ print(freg.to_string(index=False))
 #     Fichier source : data/togo_regions_geoBoundaries.geojson
 # ============================================================
 log("9b. Frontieres des 5 regions (geoBoundaries, cartographie)")
-REGSRC = os.path.join(os.path.dirname(RAW), "togo_regions_geoBoundaries.geojson")
+# Frontières des régions : ajout externe (cartographie uniquement). Le fichier nettoyé
+# data/togo_regions.geojson est déjà fourni ; pour le régénérer, télécharger la source
+# geoBoundaries ADM1 Togo et la placer ici sous ce nom :
+#   https://www.geoboundaries.org/api/current/gbOpen/TGO/ADM1/  (champ simplifiedGeometryGeoJSON)
+REGSRC = os.path.join(RAW, "togo_regions_geoBoundaries.geojson")
+if not os.path.exists(REGSRC):
+    REGSRC = os.path.join(os.path.dirname(RAW), "togo_regions_geoBoundaries.geojson")
 if os.path.exists(REGSRC):
     gb = json.load(open(REGSRC, encoding="utf-8"))
     NAME = {"Savanes Region": "Savanes", "Kara Region": "Kara", "Centrale Region": "Centrale",
